@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3:*)",
+      "Bash(php -r \":*)",
+      "Bash(php artisan config:clear)",
+      "Bash(php artisan view:clear)",
+      "Bash(php artisan cache:clear)",
+      "Bash(php artisan route:list --name=lang)",
+      "Bash(php artisan tinker --execute=\"App::setLocale\\(''ar''\\); echo __\\(''nav.dashboard''\\);\")",
+      "Bash(php artisan tinker --execute=\"App::setLocale\\(''ar''\\); echo __\\(''nav.dashboard''\\).PHP_EOL; echo __\\(''nav.patients''\\).PHP_EOL; echo __\\(''settings.title''\\).PHP_EOL;\")",
+      "Bash(php artisan tinker --execute=\"echo app\\(\\)->langPath\\(\\);\")",
+      "Bash(php artisan tinker --execute=\"App::setLocale\\(''ar''\\); $t = trans\\(''nav.dashboard''\\); echo $t;\")",
+      "Bash(php artisan tinker --execute=\"echo trans\\(''nav.dashboard''\\);\")",
+      "Bash(php \"c:/xampp/htdocs/masar-dental/lang/split_lang.php\")",
+      "Bash(php artisan tinker --execute=\"App::setLocale\\(''ar''\\); echo trans\\(''nav.dashboard''\\);\")",
+      "Bash(php artisan tinker --execute=\"App::setLocale\\(''ar''\\); echo trans\\(''patients.add_title''\\).PHP_EOL; echo trans\\(''settings.title''\\).PHP_EOL; echo trans\\(''dental_chart.healthy''\\).PHP_EOL;\")",
+      "Bash(xargs -I {} basename {})",
+      "Bash(php artisan route:list --compact)",
+      "Bash(php artisan migrate:status)",
+      "Bash(php artisan db:seed)",
+      "Bash(php artisan migrate:fresh --seed)",
+      "Bash(php artisan route:list)",
+      "Bash(php artisan view:cache)",
+      "Bash(php artisan config:cache)",
+      "Bash(php artisan route:cache)",
+      "Bash(\"c:/xampp/htdocs/masar-dental/resources/views/suppliers/create.blade.php\":*)",
+      "Bash(\"c:/xampp/htdocs/masar-dental/resources/views/suppliers/edit.blade.php\":*)",
+      "Bash(php artisan make:migration add_referral_tracking_to_patients --table=patients)",
+      "Bash(php artisan migrate)",
+      "Bash(php artisan make:migration CreateTreatmentPlansTable)",
+      "Bash(php artisan make:model TreatmentPlan)",
+      "Bash(php artisan make:controller TreatmentPlanController --resource)",
+      "Bash(php artisan make:notification FollowUpReminder)",
+      "Bash(php artisan make:command SendFollowUpReminders)"
+    ]
+  }
+}

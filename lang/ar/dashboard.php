@@ -1,0 +1,25 @@
+<?php
+
+return array (
+  'title' => 'لوحة تحكم العيادة',
+  'subtitle' => 'نظرة عامة على النشاط اليومي وأداء العيادة.',
+  'total_patients' => 'إجمالي المرضى',
+  'appointments_today' => 'مواعيد اليوم',
+  'monthly_revenue' => 'إيرادات الشهر',
+  'treatments_done' => 'علاجات منجزة',
+  'from_last_month' => '+:pct% عن الشهر الماضي',
+  'remaining' => ':n متبقية',
+  'current_month' => 'الشهر الحالي',
+  'upcoming_today' => 'المواعيد القادمة اليوم',
+  'no_appointments' => 'لا توجد مواعيد قادمة اليوم.',
+  'quick_actions' => 'إجراءات سريعة',
+  'patients_directory' => 'سجل المرضى',
+  'patients_desc' => 'إدارة جميع سجلات المرضى',
+  'new_appointment' => 'موعد جديد',
+  'new_appointment_desc' => 'جدولة زيارة مريض',
+  'create_invoice' => 'إنشاء فاتورة',
+  'create_invoice_desc' => 'إصدار فاتورة جديدة',
+  'chief_complaint' => 'الشكوى الرئيسية',
+  'routine_checkup' => 'فحص دوري',
+  'open_chart' => 'فتح السجل الطبي',
+);

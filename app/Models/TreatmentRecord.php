@@ -1,0 +1,44 @@
+<?php
+
+namespace App\Models;
+
+use App\Traits\BelongsToClinic;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
+class TreatmentRecord extends Model
+{
+    use BelongsToClinic, SoftDeletes;
+
+    protected $fillable = [
+        'clinic_id',
+        'patient_id',
+        'visit_id',
+        'doctor_id',
+        'treatment_type',
+        'teeth_involved',
+        'cost',
+        'status',
+        'notes',
+    ];
+
+    protected $casts = [
+        'teeth_involved' => 'array',
+        'cost'           => 'decimal:2',
+    ];
+
+    public function patient()
+    {
+        return $this->belongsTo(Patient::class);
+    }
+
+    public function visit()
+    {
+        return $this->belongsTo(Visit::class);
+    }
+
+    public function doctor()
+    {
+        return $this->belongsTo(User::class, 'doctor_id');
+    }
+}

@@ -1,0 +1,25 @@
+<?php
+
+return array (
+  'title' => 'Clinic Dashboard',
+  'subtitle' => 'Overview of your clinic\'s daily activity and performance.',
+  'total_patients' => 'Total Patients',
+  'appointments_today' => 'Appointments Today',
+  'monthly_revenue' => 'Monthly Revenue',
+  'treatments_done' => 'Treatments Done',
+  'from_last_month' => '+:pct% from last month',
+  'remaining' => ':n Remaining',
+  'current_month' => 'Current Month',
+  'upcoming_today' => 'Upcoming Appointments Today',
+  'no_appointments' => 'No upcoming appointments for today.',
+  'quick_actions' => 'Quick Actions',
+  'patients_directory' => 'Patients Directory',
+  'patients_desc' => 'Manage all patient records',
+  'new_appointment' => 'New Appointment',
+  'new_appointment_desc' => 'Schedule a patient visit',
+  'create_invoice' => 'Create Invoice',
+  'create_invoice_desc' => 'Generate a new bill',
+  'chief_complaint' => 'Chief Complaint',
+  'routine_checkup' => 'Routine Checkup',
+  'open_chart' => 'Open Chart',
+);
